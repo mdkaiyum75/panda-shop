@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
 
@@ -13,8 +16,8 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container" >
+        <nav class="navbar navbar-expand navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/ProgrammingHero1/complete-web-development-bangla-resources/master/panda-commerce/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +29,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,37 +49,109 @@
               </div>
             </div>
           </nav>
-    </div>
+  </div>
     
 
 
     <!-- Carousel -->
-
-    <div class="container">
+  <div class="container">
+    <div class="bg-orange">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./images/images/banner-images/tv.png" class="d-block w-100" alt="...">
+
+
+          <div class="carousel-item active" data-bs-interval="2000">
+            <div class="row align-items-center">
+            <div class="col-md-7 ">
+              <h1> LED smart TV</h1>
+              <p>Buy all your needs. This is the best shop in the world for buying any of your needs.</p>
+              <h1 class="price">1200$</h1>
+              <button class="price-btn">Buy Now</button>
+            </div>
+
+            <div class="col-md-5">
+                <img src="./images/images/banner-images/tv.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./images/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+
+          <div class="carousel-item " data-bs-interval="2000">
+            <div class="row align-items-center">
+            <div class="col-md-7 ">
+              <h1>Gamebox</h1>
+              <p>Buy all your needs. This is the best shop in the world for buying any of your needs.</p>
+              <h1 class="price">400$</h1>
+              <button class="price-btn">Buy Now</button>
+            </div>
+
+            <div class="col-md-5">
+                <img src="./images/images/banner-images/xbox.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="images/images/banner-images/xbox.png" class="d-block w-100" alt="...">
+
+          <div class="carousel-item " data-bs-interval="2000">
+            <div class="row align-items-center">
+            <div class="col-md-7 ">
+              <h1>Best Microphones</h1>
+              <p>Buy all your needs. This is the best shop in the world for buying any of your needs.</p>
+              <h1 class="price">120$</h1>
+              <button class="price-btn">Buy Now</button>
+            </div>
+
+            <div class="col-md-5">
+                <img src="./images/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
           </div>
+
+          
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      
       </div>
     </div>
+  </div>
 
 
+
+  <div class="container categories">
+    <div class="row">
+      <div class="col-md-4" >
+        <div class="d-flex justify-content-between align-items-center cat1">
+          <h1>Watch</h1>
+        <img src="./images/images/categories/watch.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="col-md-4 ">
+        <div class="d-flex justify-content-between align-items-center cat2">
+          <h1>Bag</h1>
+          <img src="./images/images/categories/bag.png" alt="">
+        </div>
+       
+      </div>
+      <div class="col-md-4">
+        <div class=" d-flex justify-content-between align-items-center cat3 " >
+          <h1>Shoes</h1>
+          <img src="./images/images/categories/shoes.png" alt="">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Pricing -->
+
+  <div class="container shoes"  id="shoes">
+    <h3>Shoes</h3>
+
+  </div>
+
+  <!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
