@@ -49,3 +49,41 @@
 .cat3 {
     background-color: blue;
 }
+
+/* .card {
+    width: 500px;
+} */
+
+
+.container h3 {
+    padding: 40px 0;
+    font-size: 32px;
+}
+#shoes p {
+    padding: 5px 0;
+}
+
+.card {
+    padding: 20px;
+    border: none;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1) ;
+}
+
+.footer {
+    background-color: #feeae9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.footer input {
+    border: none;
+    outline: none;
+    width:280px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
